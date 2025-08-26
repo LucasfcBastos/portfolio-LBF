@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+body[data-theme='dark'] {
+  --back: #031959;
+  --alterBack: #3B31A2;
+  --buttom: #FFCE16;
+  --primary: #40FF04;
+  --text: #ffffff;
+  --alterText: #000000;
+  --ImgBackGround: url(./imgs/d20-light.png);
+}
+
+body[data-theme='light'] {
+  --back: #DAF9F4;
+  --alterBack: #99C5FF;
+  --buttom: #FF7103;
+  --primary: #A100FF;
+  --text: #000000;
+  --alterText: #ffffff;
+  --ImgBackGround: url(./imgs/d20-dark.png);
+}
+
+body {
+  background-color: var(--back);
+  margin: 0em;
+}
+
+h1 {
+  font-family: 'Jersey 25';
+  color: var(--text);
+  font-size: 4em;
+  margin: 0em;
+}
+
+select {
+  font-family: 'Source Code Pro';
+  font-weight: bold;
+  font-size: 1em;
+}
+
+p {
+  font-family: 'Source Code Pro';
+  font-weight: bold;
+  font-size: 1.25em;
+  color: var(--text);
+}

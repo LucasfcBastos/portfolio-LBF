@@ -1,0 +1,53 @@
+form {
+    margin: 0 3em;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form div label input {
+    color: var(--text);
+    background-color: var(--alterText);
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    font-size: 0.75em;
+    width: 95.5%;
+    padding: 1em 0.5em;
+    border: 0.313em solid var(--primary);
+    border-radius: 0.75em;
+}
+
+
+label {
+    color: var(--text);
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5em;
+}
+
+form div label {
+    width: 48%;
+}
+
+textarea {
+    color: var(--text);
+    background-color: var(--alterText);
+    font-family: 'Source Code Pro';
+    font-weight: bold;
+    font-size: 0.75em;
+    width: 97.9%;
+    height: 8em;
+    padding: 1em 0.5em;
+    border: 0.313em solid var(--primary);
+    border-radius: 0.75em;
+    resize: none;
+}
+
+form .button-container {
+  justify-content: end;
+}
