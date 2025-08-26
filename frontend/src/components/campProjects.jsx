@@ -1,6 +1,6 @@
 import ButtomNormal from './buttomNormal';
 
-import './CampProjects.css';
+import './campProjects.css';
 
 function CampProjects({ projects }) {
   return (
