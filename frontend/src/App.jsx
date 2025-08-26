@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import HomePagePT from "./pages/pt";
-import HomePageEN from "./pages/en";
-import HomePageES from "./pages/es";
+import HomePagePT from "./pages/Pt";
+import HomePageEN from "./pages/En";
+import HomePageES from "./pages/Es";
 
 function App() {
   return (
