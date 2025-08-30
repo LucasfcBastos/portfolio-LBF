@@ -18,6 +18,7 @@
 .campTools .types img {
   width: 5em;
   height: auto;
+  border-radius: 0.75em;
 }
 
 .campTools .types p {

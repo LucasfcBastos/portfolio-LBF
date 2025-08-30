@@ -27,6 +27,8 @@ import P6 from '../imgs/projects/project6.png';
 import P7 from '../imgs/projects/project7.png';
 import P8 from '../imgs/projects/project8.png';
 import P9 from '../imgs/projects/project9.png';
+import P10 from '../imgs/projects/project10.png';
+import P11 from '../imgs/projects/project11.png';
 
 import UniEvangelica from '../imgs/Uni.png';
 
@@ -125,6 +127,8 @@ function Pt() {
           { img: 'https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/3/django-icon-ozb2brnujb9dunjyx3d9xe.png/django-icon-p0v5p3t0ixxd5d03b6zt.png?_a=DATAg1AAZAA0', text: 'Django' },
           { img: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg', text: 'Java' },
           { img: 'https://img.icons8.com/color/600/c-programming.png', text: 'C' },
+          { img: 'https://cdn-icons-png.flaticon.com/512/5968/5968332.png', text: 'PHP' },
+          { img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWfitrjP8RaSyij0rDzOFvzl92--bwK-uGsw&s', text: 'Laravel' },
           { img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Gnu-octave-logo.svg/2048px-Gnu-octave-logo.svg.png', text: 'GNU Octave' },
         ]} />
       </div>
@@ -148,6 +152,8 @@ function Pt() {
           { nome: 'Smash of Campus', img: P7, helf: 'GITHUB', github: 'https://github.com/LucasfcBastos/GameDev_Smash-of-Campus' },
           { nome: 'Carrinho de Compras', img: P8, helf: 'GITHUB', github: 'https://github.com/LucasfcBastos/Carrinho-de-Compras-da-LOLJA-com-Node.js' },
           { nome: 'Analise de Folhas', img: P9, helf: 'GITHUB', github: 'https://github.com/LucasfcBastos/D.A.S-AnaliseDeFolhas' },
+          { nome: 'Identificador de Rostos', img: P10, helf: 'GITHUB', github: 'https://github.com/LucasfcBastos/Carrinho-de-Compras-da-LOLJA-com-Node.js' },
+          { nome: 'Teste de Autenticação', img: P11, helf: 'GITHUB', github: 'https://github.com/LucasfcBastos/D.A.S-AnaliseDeFolhas' },
         ]} />
       </div>
 
