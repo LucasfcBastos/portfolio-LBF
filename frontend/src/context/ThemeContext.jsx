@@ -1,17 +1,31 @@
-import { createContext, useState, useEffect } from "react";
+import { createContext, useEffect, useState } from "react";
 
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState("dark");
+    const [theme, setTheme] = useState("light");
 
-  useEffect(() => {
-    document.body.setAttribute("data-theme", theme);
-  }, [theme]);
+    useEffect(() => {
+        const preference = window.matchMedia("(prefers-color-scheme: dark)");
 
-  return (
-    <ThemeContext.Provider value={{ theme, setTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+        setTheme(preference.matches ? "dark" : "light");
+
+        const listener = (e) => {
+            setTheme(e.matches ? "dark" : "light");
+        };
+
+        preference.addEventListener("change", listener);
+
+        return () => preference.removeEventListener("change", listener);
+    }, []);
+
+    useEffect(() => {
+        document.body.className = theme;
+    }, [theme]);
+
+    return (
+        <ThemeContext.Provider value={{ theme, setTheme }}>
+            <div className={theme}>{children}</div>
+        </ThemeContext.Provider>
+    );
 }

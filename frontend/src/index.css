@@ -1,47 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
-body[data-theme='dark'] {
-  --back: #031959;
-  --alterBack: #3B31A2;
-  --buttom: #FFCE16;
-  --primary: #40FF04;
-  --text: #ffffff;
-  --alterText: #000000;
-  --ImgBackGround: url(./imgs/d20-light.png);
+@font-face {
+    font-family: "Padauk";
+    src: url("./assets/Padauk-Regular.ttf") format("truetype");
 }
 
-body[data-theme='light'] {
-  --back: #DAF9F4;
-  --alterBack: #99C5FF;
-  --buttom: #FF7103;
-  --primary: #A100FF;
-  --text: #000000;
-  --alterText: #ffffff;
-  --ImgBackGround: url(./imgs/d20-dark.png);
+:root {
+    --TextSpan: 3.75em;
+    --TextH1: 2.25em;
+    --TextH3: 1.5em;
+    --TextP: 0.75em;
+}
+
+.light {
+    --ColorMain: #99C5FF;
+    --ColorMainAlter: #DAF9F4;
+    --ColorTheme: #F8F9FA;
+    --ColorThemeAlter: #CED4DA;
+    --ColorText: #000000;
+    --ColorPrimaria: #ff00ff;
+}
+
+.dark {
+    --ColorMain: #3B31A2;
+    --ColorMainAlter: #031959;
+    --ColorTheme: #1A1D20;
+    --ColorThemeAlter: #2B3035;
+    --ColorText: #ffffff;
+    --ColorPrimaria: #00ff00;
 }
 
 body {
-  background-color: var(--back);
-  margin: 0em;
+    background-color: var(--ColorMainAlter);
+    margin: 0em;
+    font-family: "Padauk";
+}
+
+span,
+h1,
+h3,
+p {
+    color: var(--ColorText);
+    margin: 0em;
+}
+
+.textAlter {
+    color: var(--ColorPrimaria);
+}
+
+span {
+    font-size: var(--TextSpan);
+    line-height: 1em;
 }
 
 h1 {
-  font-family: 'Jersey 25';
-  color: var(--text);
-  font-size: 4em;
-  margin: 0em;
+    font-size: var(--TextH1);
 }
 
-select {
-  font-family: 'Source Code Pro';
-  font-weight: bold;
-  font-size: 1em;
+h3 {
+    font-size: var(--TextH3);
 }
 
-p {
-  font-family: 'Source Code Pro';
-  font-weight: bold;
-  font-size: 1.25em;
-  color: var(--text);
+p,
+label {
+    font-size: var(--TextP);
+}
+
+input,
+textarea {
+    font-size: calc(var(--TextP) + 0.25em);
 }

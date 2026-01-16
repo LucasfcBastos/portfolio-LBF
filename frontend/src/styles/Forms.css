@@ -1,0 +1,29 @@
+.inputs {
+    display: flex;
+    gap: 1.75em;
+    margin-bottom: 0.5em;
+}
+
+label {
+    font-family: "Padauk";
+    color: var(--ColorText);
+    width: 100%;
+}
+
+input {
+    width: calc(99.4% - 2em);
+}
+
+input,
+textarea {
+    font-family: "Padauk";
+    display: block;
+    color: var(--ColorText);
+    background-color: var(--ColorThemeAlter);
+    padding: 1em;
+    border: 2px solid var(--ColorText);
+}
+
+textarea {
+    width: calc(100% - 2.5em);
+}

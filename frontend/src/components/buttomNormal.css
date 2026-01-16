@@ -1,9 +1,0 @@
-.buttomNormal {
-    background-color: var(--buttom);
-    border: none;
-    font-size: 1.25em;
-    padding: 0.5em 1.25em;
-    margin-bottom: 1em;
-    border-radius: 1.25em;
-    cursor: pointer;
-}
