@@ -26,4 +26,29 @@ textarea {
 
 textarea {
     width: calc(100% - 2.5em);
+    height: calc(1.5em * 5);
+    resize: none;
+}
+
+.button-container {
+    margin: 2em 0em;
+    display: flex;
+    justify-content: end;
+}
+
+.button-container button {
+    font-family: "Padauk";
+    color: var(--ColorText);
+    cursor: pointer;
+    background-color: transparent;
+    padding: 1em 5em;
+    border-radius: 1em;
+    border: 0.3em solid var(--ColorPrimaria);
+    font-size: var(--TextP);
+}
+
+.button-container button:hover {
+    background-color: var(--ColorPrimaria);
+    color: var(--COlorTheme);
+    font-weight: bolder;
 }

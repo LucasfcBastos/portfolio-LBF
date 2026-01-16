@@ -1,7 +1,12 @@
 import Icon from '../assets/Icon.svg?react'
 import Vector from '../assets/Vector.svg?react'
+
+import socialLinks from '../data/socialLinks'
+
 import Hr from '../components/HrD'
 import Forms from '../components/FormsEmail'
+import IconsL from '../components/SocialIcons'
+
 import '../App.css'
 
 function LandingPage() {
@@ -22,12 +27,21 @@ function LandingPage() {
             <span>Eng. de Software</span>
           </div>
         </div>
-        <Hr />
-        <h1 className='title'>
-          CONTATO
-        </h1>
+        <Hr type="CONTATO" />
         <Forms />
+        <div className='iconsSocial'>
+          {socialLinks.map((item) => (
+            <IconsL key={item.id} url={item.url_go} img={item.url_img} type={item.type} />
+          ))}
+        </div>
       </div>
+      <footer>
+        <p>
+          ©2026 - Lucas Bastos<br/>
+          @lucasfcbastos - Todos os direitos reservados<br/>
+          lucas.software.engineering@gmail.com
+        </p>
+      </footer>
     </>
   )
 }

@@ -1,0 +1,9 @@
+.iconsSocial {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+
+.iconsSocial img {
+    width: 5em;
+}

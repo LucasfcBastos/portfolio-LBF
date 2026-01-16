@@ -40,7 +40,9 @@ nav .icon {
   color: var(--ColorPrimaria)
 }
 
-.title {
+footer {
   text-align: center;
-  margin: 0.5em 0em;
+  border-top: 2px solid var(--ColorText);
+  background-color: var(--ColorTheme);
+  padding: 1em 0em;
 }
