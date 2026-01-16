@@ -1,11 +1,13 @@
 import Icon from '../assets/Icon.svg?react'
 import Vector from '../assets/Vector.svg?react'
 
-import socialLinks from '../data/socialLinks'
+import stacks from '../data/MinhasStacks'
+import socialLinks from '../data/SocialLinks'
 
 import Hr from '../components/HrD'
 import Forms from '../components/FormsEmail'
 import IconsL from '../components/SocialIcons'
+import StacksV from '../components/MysStacks'
 
 import '../App.css'
 
@@ -26,6 +28,13 @@ function LandingPage() {
             <span className='textAlter'>LUCAS BASTOS FRANCO</span><br/>
             <span>Eng. de Software</span>
           </div>
+        </div>
+        <Hr type="SOBRE MIM" />
+        <p style={{ textAlign: 'center'}}>Engenheiro de Software em início de carreira, apaixonado por tecnologia e inovação. Experiência em projetos acadêmicos atuando como Product Owner, Product Designer, Desenvolvedor Frontend, Desenvolvedor Backend e Quality Assurance. Busco oportunidades para adquirir experiência prática e crescer junto à empresa.</p>
+        <div className='myStacks'>
+          {stacks.map((item) => (
+            <StacksV img={item.url} type={item.type} />
+          ))}
         </div>
         <Hr type="CONTATO" />
         <Forms />
