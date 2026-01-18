@@ -15,6 +15,17 @@ nav h1 {
   left: 0em;
 }
 
+nav a {
+  position: absolute;
+  text-decoration: none;
+  margin-left: 0.9em;
+  left: 0em;
+  font-size: var(--TextH1);
+  color: var(--ColorText);
+  font-family: "Padauk";
+  font-weight: bold;
+}
+
 nav .icon {
   color: var(--ColorText);
   height: 100%;
