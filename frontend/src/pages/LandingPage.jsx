@@ -3,6 +3,7 @@ import Vector from '../assets/Vector.svg?react'
 
 import stacks from '../data/MinhasStacks'
 import projects from '../data/MeusProjetos'
+import Aprojects from '../data/AcaProject'
 import socialLinks from '../data/SocialLinks'
 
 import Hr from '../components/HrD'
@@ -10,6 +11,7 @@ import Forms from '../components/FormsEmail'
 import IconsL from '../components/SocialIcons'
 import StacksV from '../components/MysStacks'
 import ProjectsV from '../components/MysProjects'
+import AProjectsV from '../components/MysAcaProjects'
 
 import '../App.css'
 
@@ -42,6 +44,11 @@ function LandingPage() {
         </div>
         <Hr type="PROJETOS" />
         <div id='projects'>
+          <div className='camp-a-projects'>
+            {Aprojects.map((item) => (
+              <AProjectsV key={item.id} img={item.url_img} name={item.name} url={item.redirect_url} />
+            ))}
+          </div>
           <div className='camp-projects'>
             {projects.map((item) => (
               <ProjectsV key={item.id} img={item.project_image} name={item.nav.project_name} id={item.id} />
