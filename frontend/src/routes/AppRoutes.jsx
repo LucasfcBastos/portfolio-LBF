@@ -7,7 +7,7 @@ export function AppRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/project/1" element={<AboutProject />} />
+        <Route path="/project/:id" element={<AboutProject />} />
       </Routes>
     </BrowserRouter>
   );

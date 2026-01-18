@@ -1,0 +1,23 @@
+.camp-projects {
+    background-color: var(--ColorThemeAlter);
+    padding: 0.75em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.camp-projects .card {
+    width: calc(100% / 3 - 0.5em);
+    text-align: center;
+    background-color: var(--ColorTheme);
+    padding-bottom: 0.75em;
+}
+
+.camp-projects .card img {
+    width: calc(100%);
+}
+
+.camp-projects .card a {
+    color: var(--ColorText);
+}
