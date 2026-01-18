@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Icon from '../assets/Icon.svg?react'
 import IconsRedi from '../components/IconsRedi'
 import StacksV from '../components/MysStacks'
@@ -15,7 +15,7 @@ function AboutProject() {
     );
 
     if (!project) {
-        return <h2>Projeto não encontrado</h2>;
+        return <Navigate to="/ERROR" replace />;
     }
     return (
         <>

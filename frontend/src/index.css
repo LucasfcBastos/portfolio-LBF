@@ -37,7 +37,8 @@ body {
 span,
 h1,
 h3,
-p {
+p,
+a {
     color: var(--ColorText);
     margin: 0em;
 }
