@@ -1,4 +1,5 @@
-.myStacks {
+.camp-stacks {
+    justify-content: center;
     background-color: var(--ColorTheme);
     display: flex;
     margin: 2em 0em;
@@ -7,6 +8,6 @@
     padding: 1em;
 }
 
-.myStacks img {
+.camp-stacks img {
     width: 5em;
 }

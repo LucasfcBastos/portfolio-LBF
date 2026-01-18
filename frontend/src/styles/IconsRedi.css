@@ -1,0 +1,17 @@
+.linesIcons {
+    display: flex;
+    justify-items: start;
+    align-items: center;
+}
+
+.linesIcons img {
+    width: 4em;
+    height: 5em;
+    margin-right: 0.5em;
+}
+
+a {
+    color: #84A0B8;
+    text-decoration: none;
+    font-weight: bold;
+}

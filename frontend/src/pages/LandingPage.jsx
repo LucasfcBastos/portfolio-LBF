@@ -19,7 +19,7 @@ function LandingPage() {
         <Icon className="icon" />
       </nav>
       <div style={{padding: "1em", width: "calc(100% - 2em)"}}>
-        <div id='main'>
+        <div id='main' className='intro'>
           <div className='img_photo'>
             <Vector className="vec_photo" />
           </div>
@@ -30,18 +30,26 @@ function LandingPage() {
           </div>
         </div>
         <Hr type="SOBRE MIM" />
-        <p style={{ textAlign: 'center'}}>Engenheiro de Software em início de carreira, apaixonado por tecnologia e inovação. Experiência em projetos acadêmicos atuando como Product Owner, Product Designer, Desenvolvedor Frontend, Desenvolvedor Backend e Quality Assurance. Busco oportunidades para adquirir experiência prática e crescer junto à empresa.</p>
-        <div className='myStacks'>
-          {stacks.map((item) => (
-            <StacksV img={item.url} type={item.type} />
-          ))}
+        <div id='stacks'>
+          <p style={{ textAlign: 'center'}}>Engenheiro de Software em início de carreira, apaixonado por tecnologia e inovação. Experiência em projetos acadêmicos atuando como Product Owner, Product Designer, Desenvolvedor Frontend, Desenvolvedor Backend e Quality Assurance. Busco oportunidades para adquirir experiência prática e crescer junto à empresa.</p>
+          <div className='camp-stacks'>
+            {stacks.map((item) => (
+              <StacksV img={item.url} type={item.type} />
+            ))}
+          </div>
+        </div>
+        <Hr type="PROJETOS" />
+        <div id='projects'>
+
         </div>
         <Hr type="CONTATO" />
-        <Forms />
-        <div className='iconsSocial'>
-          {socialLinks.map((item) => (
-            <IconsL key={item.id} url={item.url_go} img={item.url_img} type={item.type} />
-          ))}
+        <div id='social'>
+          <Forms />
+          <div className='iconsSocial'>
+            {socialLinks.map((item) => (
+              <IconsL key={item.id} url={item.url_go} img={item.url_img} type={item.type} />
+            ))}
+          </div>
         </div>
       </div>
       <footer>

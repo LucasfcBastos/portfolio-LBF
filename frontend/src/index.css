@@ -60,7 +60,8 @@ h3 {
 }
 
 p,
-label {
+label,
+a {
     font-size: var(--TextP);
 }
 

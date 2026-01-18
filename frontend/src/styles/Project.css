@@ -1,0 +1,43 @@
+#main.project {
+    background-color: var(--ColorTheme);
+    width: 100%;
+    padding-bottom: 1.5em;
+}
+
+#main.project .intro {
+    padding: 1.5em 1.5em 0.75em 1.5em;
+    background-color: var(--ColorThemeAlter);
+}
+
+#main.project .intro img {
+    width: 7em;
+    height: 7em;
+    position: absolute;
+}
+
+#main.project .info {
+    display: flex;
+    padding: 1em 1.5em 1.5em 1.5em;
+    gap: 1.5em;
+}
+
+#main.project .info img.project {
+    width: 100%;
+}
+
+#main.project .versions {
+    background-color: var(--ColorThemeAlter);
+    border: 2px solid var(--ColorText);
+    width: calc(50% - 4.3em);
+    height: 50px;
+    margin-left: 1.5em;
+    padding: 1em;
+}
+
+#main.project h3 {
+    margin-top: 0.5em;
+}
+
+#main.project p {
+    text-align: justify;
+}

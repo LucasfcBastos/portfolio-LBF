@@ -21,7 +21,7 @@ nav .icon {
   height: 3.25em;
 }
 
-#main {
+#main.intro {
   width: 100%;
   height: calc(100dvh - 5.75em);
   margin-top: 5.25em;
