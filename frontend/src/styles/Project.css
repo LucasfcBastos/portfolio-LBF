@@ -21,6 +21,10 @@
     gap: 1.5em;
 }
 
+#main.project .info .column {
+    width: calc(50%);
+}
+
 #main.project .info img.project {
     width: 100%;
 }

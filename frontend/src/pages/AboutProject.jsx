@@ -1,5 +1,6 @@
 import Icon from '../assets/Icon.svg?react'
 import IconsRedi from '../components/IconsRedi'
+import StacksV from '../components/MysStacks'
 
 import Projeto from '../data/MeusProjetos'
 
@@ -27,16 +28,20 @@ function AboutProject() {
                 </div>
                 <hr style={{marginTop: "2em"}}/>
                 <div className='info'>
-                    <div className='column left'>
+                    <div className='column'>
                         <img src={Projeto[0].img_projet} className='project' />
                         <h3>Oportunidade</h3>
                         <p>{Projeto[0].oportunidade}</p>
                         <h3>Solução</h3>
                         <p>{Projeto[0].solucao}</p>
                     </div>
-                    <div className='column right'>
+                    <div className='column'>
                         <h3>Ferramentas Utilizadas</h3>
-                        <p>{Projeto[0].oportunidade}</p>
+                        <div className='camp'>
+                            {Projeto[0].tech.map((item) => (
+                                <StacksV img={item.url} type={item.type} />
+                            ))}
+                        </div>
                         <h3>Saiba Mais</h3>
                         <div>
                             {Projeto[0].saiba.map((item) => (
