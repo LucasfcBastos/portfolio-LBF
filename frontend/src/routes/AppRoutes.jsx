@@ -9,7 +9,7 @@ export function AppRoutes() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/project/:id" element={<AboutProject />} />
-        <Route path="/ERROR" element={<NotFound />} />
+        <Route path="/error" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>

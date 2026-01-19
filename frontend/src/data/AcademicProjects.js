@@ -1,4 +1,4 @@
-const AcademicProject = [
+const AcademicProjects = [
     {
         id: 1,
         name: "PROJETO INTEGRADOR: BYTEDONTO",
@@ -19,4 +19,4 @@ const AcademicProject = [
     },
 ];
 
-export default AcademicProject;
+export default AcademicProjects;

@@ -4,10 +4,10 @@
 }
 
 :root {
-    --TextSpan: 3.75em;
-    --TextH1: 2.25em;
-    --TextH3: 1.5em;
-    --TextP: 0.75em;
+    --TextV1: 3.75em;
+    --TextV2: 2.25em;
+    --TextV3: 1.5em;
+    --TextV4: 0.75em;
 }
 
 .light {
@@ -31,7 +31,6 @@
 body {
     background-color: var(--ColorMainAlter);
     margin: 0em;
-    font-family: "Padauk";
 }
 
 span,
@@ -41,6 +40,7 @@ p,
 a {
     color: var(--ColorText);
     margin: 0em;
+    font-family: "Padauk";
 }
 
 .textAlter {
@@ -48,25 +48,25 @@ a {
 }
 
 span {
-    font-size: var(--TextSpan);
+    font-size: var(--TextV1);
     line-height: 1em;
 }
 
 h1 {
-    font-size: var(--TextH1);
+    font-size: var(--TextV2);
 }
 
 h3 {
-    font-size: var(--TextH3);
+    font-size: var(--TextV3);
 }
 
 p,
 label,
 a {
-    font-size: var(--TextP);
+    font-size: var(--TextV4);
 }
 
 input,
 textarea {
-    font-size: calc(var(--TextP) + 0.25em);
+    font-size: calc(var(--TextV4) + 0.25em);
 }

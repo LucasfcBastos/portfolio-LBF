@@ -1,21 +1,23 @@
 import { useParams, Navigate } from "react-router-dom";
 import Icon from '../assets/Icon.svg?react'
+
 import IconsRedi from '../components/IconsRedi'
-import StacksV from '../components/MysStacks'
+import StacksV from '../components/TechnologyIcons'
 
-import Date from '../data/MeusProjetos'
+import Data from '../data/PersonalProjects'
 
-import '../styles/Project.css'
+import '../styles/Nav.css'
+import '../styles/About/AboutProject.css'
 
 function AboutProject() {
     const { id } = useParams();
 
-    const project = Date.find(
+    const project = Data.find(
         (item) => item.id === Number(id)
     );
 
     if (!project) {
-        return <Navigate to="/ERROR" replace />;
+        return <Navigate to="/error" replace />;
     }
     return (
         <>

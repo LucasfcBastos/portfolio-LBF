@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com';
 
-import '../styles/Forms.css'
+import '../../styles/Landing/Forms.css'
 
 function FormsEmail() {
     const [nome, setNome] = useState('');
@@ -39,6 +39,7 @@ function FormsEmail() {
                         placeholder='Digita o seu nome'
                         value={nome}
                         onChange={(e) => setNome(e.target.value)}
+                        required
                     />
                 </label>
                 <label>
@@ -49,6 +50,7 @@ function FormsEmail() {
                         placeholder='Digita o seu email'
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+                        required
                     />
                 </label>
             </div>
@@ -60,6 +62,7 @@ function FormsEmail() {
                     placeholder='Digita o sua mensagem'
                     value={mensagem}
                     onChange={(e) => setMensagem(e.target.value)}
+                    required
                 />
             </label>
             <div className="button-container">

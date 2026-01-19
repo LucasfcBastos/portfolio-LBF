@@ -1,4 +1,4 @@
-const MyProjects = [
+const PersonalProjects = [
     {
         id: 1,
         nav: {
@@ -62,4 +62,4 @@ const MyProjects = [
     }
 ];
 
-export default MyProjects;
+export default PersonalProjects;

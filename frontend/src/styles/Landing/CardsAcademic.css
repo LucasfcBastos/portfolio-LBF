@@ -1,26 +1,32 @@
-.camp-a-projects {
+.camp-academic {
     display: flex;
     flex-wrap: wrap;
     gap: 0.75em;
     margin-bottom: 1.5em;
 }
 
-.camp-a-projects .card {
+.camp-academic .card {
     width: calc(100% / 3 - 2.5em);
     text-align: center;
     background-color: var(--ColorTheme);
     padding-bottom: 0.75em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     gap: 1em;
     padding: 1em;
 }
 
-.camp-a-projects .card img {
+.camp-academic .card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.camp-academic .card img {
     width: calc(50%);
 }
 
-.camp-a-projects .card a {
+.camp-academic .card a {
     color: var(--ColorText);
 }

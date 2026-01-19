@@ -1,6 +1,6 @@
-import '../styles/mysprojects.css'
+import '../../styles/Landing/CardsPersonal.css'
 
-function MysProjects({ img, name, id }) {
+function CardsPersonal({ img, name, id }) {
     return (
         <div className='card'>
             <img src={img} />
@@ -11,4 +11,4 @@ function MysProjects({ img, name, id }) {
     )
 }
 
-export default MysProjects
+export default CardsPersonal
