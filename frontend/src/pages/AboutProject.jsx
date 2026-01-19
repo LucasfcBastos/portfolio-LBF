@@ -1,8 +1,8 @@
 import { useParams, Navigate } from "react-router-dom";
 import Icon from '../assets/Icon.svg?react'
 
-import IconsRedi from '../components/IconsRedi'
-import StacksV from '../components/TechnologyIcons'
+import Redirect from '../components/IconsRedi'
+import TechProject from '../components/TechnologyIcons'
 
 import Data from '../data/PersonalProjects'
 
@@ -26,10 +26,10 @@ function AboutProject() {
                 <Icon className="icon" />
             </nav>
             <div style={{padding: "1em", width: "calc(100% - 2em)", minHeight: "calc(100dvh - (5.25em + 7.5em))", marginTop: "5.25em" }}>
-                <div id='main' className='project' >
+                <div className='project' >
                     <div className='intro'>
                         <img src={project.nav.logo_url} />
-                        <div style={{marginLeft: "8em", marginTop: "1em"}}>
+                        <div className="text" >
                             <h1>{project.nav.project_name}</h1>
                             <div style={{display: "flex", gap: "1em"}}>
                                 <p>{project.nav.main_tech}</p>
@@ -41,7 +41,7 @@ function AboutProject() {
                     <hr style={{marginTop: "2em"}}/>
                     <div className='info'>
                         <div className='column'>
-                            <img src={project.project_image} className='project' />
+                            <img src={project.project_image} className='img_project' />
                             <h3>Oportunidade</h3>
                             <p>{project.opportunity}</p>
                             <h3>Solução</h3>
@@ -51,13 +51,13 @@ function AboutProject() {
                             <h3>Ferramentas Utilizadas</h3>
                             <div className='camp'>
                                 {project.technologies.map((item) => (
-                                    <StacksV img={item.url} type={item.type} />
+                                    <TechProject img={item.url} type={item.type} />
                                 ))}
                             </div>
                             <h3>Saiba Mais</h3>
                             <div>
                                 {project.learn_more.map((item) => (
-                                    <IconsRedi key={item.type} img={item.url} text1={item.display_text} text2={item.redirect_text} redi={item.redirect_url} />
+                                    <Redirect key={item.type} img={item.url} text1={item.display_text} text2={item.redirect_text} redi={item.redirect_url} />
                                 ))}
                             </div>
                         </div>
