@@ -22,3 +22,10 @@ footer {
   background-color: var(--ColorTheme);
   padding: 1em 0em;
 }
+
+@media (max-width: 650px)  {
+  #main.intro {
+    height: calc(100dvh - 6.2em);
+    flex-direction: column;
+  }
+}

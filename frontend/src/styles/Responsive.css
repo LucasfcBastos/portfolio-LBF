@@ -1,0 +1,103 @@
+@media (max-width: 650px)  {
+    :root {
+        --TextV1: 3em;
+        --TextV2: 2em;
+        --TextV3: 1.5em;
+        --TextV4: 1.1em;
+    }
+
+    .camp {
+        gap: 0.4em;
+        padding: 0em;
+    }
+    
+    .camp img {
+        width: 4em;
+    }
+
+    .iconsSocial {
+        flex-wrap: wrap;
+        gap: 1em;
+        row-gap: 0em;
+    }
+
+    .inputs {
+        flex-direction: column;
+        gap: 0.4em;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    textarea {
+        width: calc(100% - 1.2em);
+    }
+
+    input {
+        width: calc(100% - 1.2em);
+    }
+
+    input,
+    textarea {
+        padding: 0.5em;
+    }
+
+    .camp-personal {
+        flex-direction: column;
+        gap: 0.75em;
+    }
+    
+    .camp-personal .card {
+        width: 100%;
+    }
+
+    .camp-academic {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .camp-academic .card {
+        width: calc(100% - 2em);
+    }
+    
+    .camp-academic .card img {
+        width: calc(40%);
+    }
+
+    .project .intro img {
+        position: relative;
+    }
+
+    .project .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project .intro .text {
+        justify-items: center;
+        margin-left: 0em;
+    }
+
+    .project .intro .text div {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .project .info {
+        display: block;
+    }
+
+    .project .info .column {
+        width: 100%;
+    }
+
+    .project .versions {
+        background-color: var(--ColorThemeAlter);
+        border: 2px solid var(--ColorText);
+        width: calc(100% - 5em);
+        height: auto;
+    }
+}

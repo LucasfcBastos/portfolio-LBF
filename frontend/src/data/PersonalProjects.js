@@ -2,6 +2,61 @@ const PersonalProjects = [
     {
         id: 1,
         nav: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Enigma%20of%20Fear/logo.png",
+            project_name: "Enigma of Fear",
+            main_tech: "Marketing Digital de Jogos",
+            sector: "Indústria de Jogos Digitais",
+            sdg: "9",
+        },
+        project_image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Enigma%20of%20Fear/tela.png",
+        opportunity: "A crescente competitividade do mercado de jogos digitais, especialmente no segmento indie, torna a visibilidade internacional um fator crítico para o sucesso de novos títulos. O jogo Enigma do Medo apresenta uma proposta narrativa e estética diferenciada, porém enfrenta o risco de não alcançar de forma efetiva o público global, em especial jogadores de língua inglesa. A ausência de um ponto centralizado e acessível para a apresentação do jogo dificulta a compreensão de sua identidade, de seus diferenciais e de seu valor, reduzindo o engajamento inicial e as oportunidades de conversão, como o acompanhamento do desenvolvimento ou a adição do jogo a listas de desejo. Esse cenário evidencia a necessidade de uma solução que organize, traduza e comunique de forma clara a essência do jogo para um mercado internacional altamente competitivo.",
+        solution: "A solução proposta consiste no desenvolvimento de uma landing page dedicada à divulgação internacional do jogo Enigma do Medo, com foco no público falante da língua inglesa. A landing page atuará como um ponto de entrada estratégico, reunindo em um único ambiente as principais informações do jogo, como narrativa, atmosfera, identidade visual, materiais gráficos e chamadas à ação. Projetada com foco em experiência do usuário e comunicação clara, a página busca transmitir a essência do jogo de forma envolvente e imersiva, despertando curiosidade e incentivando o engajamento inicial. Ao reduzir barreiras linguísticas e informacionais, a solução fortalece a identidade da marca do jogo, amplia seu alcance global e aumenta suas chances de reconhecimento e consolidação no mercado internacional de jogos indie.",
+        technologies: [
+            { type: "Word", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/word.svg" },
+            { type: "Figma", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/figma.svg" },
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "HTML5", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/html.svg" },
+            { type: "CSS3", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/css.svg" },
+            { type: "JavaScript", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/javascript.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/pdf.svg",
+                display_text: "EnigmaofFear_Documentacao.pdf",
+                redirect_text: "Fazer download",
+                redirect_url: "/EnigmaofFear_Documentacao.pdf"
+            },
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/figma.svg",
+                display_text: "PD - Enigma of Fear",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://www.figma.com/design/bQ0JJYt5CP48zsfLdNC0cq/PD---Enigma-of-Fear?node-id=0-1&t=w0BHbTJChTRbtYa6-1"
+            },
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Enigma-of-Fear",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://github.com/LucasfcBastos/Enigma-of-Fear"
+            },
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Enigma of Fear",
+                redirect_text: "Ver Projeto",
+                redirect_url: "https://lucasfcbastos.github.io/Enigma-of-Fear/"
+            }
+        ],
+        versioning: {
+            created_at: "19/02/2024",
+            version: 3,
+            latest_version: "3.0",
+            latest_date: "29/01/2026"
+        }
+    },
+    {
+        id: 2,
+        nav: {
             logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Happy%20Paws/logo.png",
             project_name: "Happy Paws",
             main_tech: "Tecnologia da Informação e Telecomunicações",

@@ -40,6 +40,14 @@ const MinhasStacks = [
 		url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/google-meet.svg"
 	},
 	{
+		type: "Waterfall",
+		url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/waterfall.svg"
+	},
+	{
+		type: "Kanban",
+		url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/kanban.svg"
+	},
+	{
 		type: "Scrum",
 		url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/scrum.svg"
 	},
@@ -66,6 +74,10 @@ const MinhasStacks = [
 	{
 		type: "Flaticon",
 		url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/flaticon.svg"
+	},
+	{
+		type: "Meta",
+		url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/meta.svg"
 	},
 	{
 		type: "Storyset",
