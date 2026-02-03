@@ -100,4 +100,8 @@
         width: calc(100% - 5em);
         height: auto;
     }
+
+    .camp-stacks {
+        gap: 0.9em;
+    }
 }
