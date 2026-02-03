@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LandingPage } from "../pages/LandingPage";
-import { AboutProject } from "../pages/AboutProject";
-import { NotFound } from "../pages/NotFound";
+import LandingPage from "../pages/LandingPage";
+import AboutProject from "../pages/AboutProject";
+import NotFound from "../pages/NotFound";
 
 export function AppRoutes() {
   return (
