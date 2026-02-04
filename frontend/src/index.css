@@ -47,11 +47,6 @@ a {
     color: var(--ColorPrimaria);
 }
 
-span {
-    font-size: var(--TextV1);
-    line-height: 1em;
-}
-
 h1 {
     font-size: var(--TextV2);
 }

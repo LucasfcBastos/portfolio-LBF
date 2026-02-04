@@ -1,12 +1,12 @@
 #main.intro {
   width: 100%;
-  height: calc(100dvh - 6.28em);
+  height: calc(100dvh - 5vh);
   display: flex;
   justify-content: space-evenly;
 }
 
 .img_photo {
-  width: 25em;
+  width: 50vh;
   height: auto;
 }
 
@@ -16,16 +16,15 @@
   color: var(--ColorPrimaria)
 }
 
+.text_home h1 {
+  font-size: 7.5vh;
+  line-height: 0.75em;
+  font-family: "Padauk";
+}
+
 footer {
   text-align: center;
   border-top: 2px solid var(--ColorText);
   background-color: var(--ColorTheme);
   padding: 1em 0em;
-}
-
-@media (max-width: 650px)  {
-  #main.intro {
-    height: calc(100dvh - 6.2em);
-    flex-direction: column;
-  }
 }
