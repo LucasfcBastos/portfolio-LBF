@@ -76,9 +76,6 @@ const PersonalProjects = [
             { type: "Storyset", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/storyset.svg" },
             { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
             { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
-            { type: "HTML5", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/html.svg" },
-            { type: "CSS3", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/css.svg" },
-            { type: "JavaScript", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/javascript.svg" },
             { type: "Vite", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/vite.svg" },
             { type: "React", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/react.svg" },
             { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
@@ -120,13 +117,13 @@ const PersonalProjects = [
         nav: {
             logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Software%20Balanca/logo.jpg",
             project_name: "Software Balança",
-            main_tech: "A",
-            sector: "A",
-            sdg: "numb",
+            main_tech: "Sistemas de Informação",
+            sector: "Agronegócio",
+            sdg: "9",
         },
         project_image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Software%20Balanca/tela.png",
-        opportunity: "A",
-        solution: "A",
+        opportunity: "A comercialização de bovinos para frigoríficos envolve etapas críticas de pesagem que impactam diretamente o valor final recebido pelo produtor. Nesse processo, muitos pecuaristas dependem exclusivamente dos registros fornecidos pelos próprios frigoríficos, o que pode gerar insegurança quanto à transparência dos dados, especialmente em cenários onde há divergências de peso ou suspeitas de adulteração. Além disso, a ausência de um controle próprio e estruturado faz com que o produtor tenha que aguardar relatórios finais para validar informações, atrasando a tomada de decisão e dificultando a contestação de possíveis inconsistências. Esse cenário evidencia uma lacuna na digitalização e no controle independente dos dados de pesagem, criando uma oportunidade para soluções que aumentem a confiabilidade, autonomia e rastreabilidade das informações no processo de abate.",
+        solution: "A solução proposta consiste em um software de registro e validação de pesagens no processo de abate bovino, desenvolvido para oferecer ao produtor rural maior controle e transparência sobre os dados coletados. O sistema permite que o usuário inicie um abate e organize os animais em lotes, registrando individualmente os pesos de cada banda das carcaças conforme são processadas. Com isso, o produtor passa a ter um histórico próprio, estruturado e confiável, que pode ser utilizado para conferência com os dados fornecidos pelo frigorífico. A aplicação reduz a dependência de relatórios externos, acelera a verificação das informações e fortalece a capacidade de auditoria do produtor, contribuindo para relações comerciais mais justas e seguras. Além disso, promove a digitalização do processo, aumentando a eficiência operacional e a rastreabilidade dos dados ao longo de toda a cadeia produtiva.",
         technologies: [
             { type: "Figma", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/figma.svg" },
             { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
@@ -146,6 +143,83 @@ const PersonalProjects = [
             version: 1,
             latest_version: "1.0",
             latest_date: "23/02/2026"
+        }
+    },
+    {
+        id: 4,
+        nav: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/MesaFacil/logo.png",
+            project_name: "Mesa Facil",
+            main_tech: "Desenvolvimento Web Mobile",
+            sector: "Alimentação e Hospitalidade",
+            sdg: "8",
+        },
+        project_image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/MesaFacil/tela.png",
+        opportunity: "A gestão de reservas em restaurantes, especialmente em estabelecimentos de pequeno e médio porte, ainda enfrenta desafios relacionados à organização e controle da capacidade de atendimento. Muitos locais utilizam métodos manuais ou sistemas pouco integrados, o que aumenta a probabilidade de erros operacionais, como a duplicidade de reservas para a mesma mesa, conflitos de horário e a superlotação do ambiente. Esses problemas impactam diretamente a experiência do cliente, gerando insatisfação, filas e até perda de consumidores, além de prejudicar a reputação do estabelecimento. Em um mercado altamente competitivo, onde a experiência do usuário é um fator decisivo, a falta de um sistema eficiente de gerenciamento de reservas representa uma oportunidade clara para soluções digitais que garantam organização, previsibilidade e melhor aproveitamento da capacidade operacional dos restaurantes.",
+        solution: "A solução proposta consiste em um sistema web mobile de reservas de mesas, projetado para oferecer praticidade e controle tanto para os clientes quanto para os restaurantes. A plataforma permite que os usuários realizem reservas de forma simples e intuitiva, escolhendo data, horário e disponibilidade em tempo real, enquanto os estabelecimentos cadastram suas informações, como capacidade máxima e quantidade de mesas disponíveis. O sistema implementa validações automáticas para evitar conflitos, impedindo reservas duplicadas para o mesmo horário, mesa e local, além de bloquear agendamentos que ultrapassem a capacidade do restaurante. Dessa forma, a aplicação reduz erros operacionais, melhora a organização interna e proporciona uma experiência mais confiável para os clientes. Como resultado, os restaurantes conseguem otimizar sua ocupação, evitar perdas de receita e fortalecer o relacionamento com o público por meio de um serviço mais eficiente e profissional.",
+        technologies: [
+            { type: "Word", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/word.svg" },
+            { type: "MySQL Workbench", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/mysql-workbench.svg" },
+            { type: "Figma", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/figma.svg" },
+            { type: "Flaticon", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/flaticon.svg" },
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "Vite", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/vite.svg" },
+            { type: "React", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/react.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+            { type: "PHP", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/php.svg" },
+            { type: "Laravel", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/laravel.svg" },
+            { type: "MySQL", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/mysql.svg" },
+            { type: "Postman", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/postman.svg" }
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "MesaFacil",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://github.com/LucasfcBastos/MesaFacil"
+            }
+        ],
+        versioning: {
+            created_at: "01/03/2026",
+            version: 1,
+            latest_version: "1.2",
+            latest_date: "31/03/2026"
+        }
+    },
+    {
+        id: 5,
+        nav: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Tela%20de%20Login/logo.png",
+            project_name: "Tela de Login",
+            main_tech: "Desenvolvimento Web",
+            sector: "Educação",
+            sdg: "4",
+        },
+        project_image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Tela%20de%20Login/tela.png",
+        opportunity: "O aprendizado inicial em desenvolvimento de sistemas frequentemente apresenta desafios para estudantes que estão tendo o primeiro contato com conceitos fundamentais como autenticação, validação de dados e fluxo de acesso. Muitos iniciantes encontram dificuldade em compreender a lógica por trás de uma simples tela de login, especialmente quando os conteúdos disponíveis são excessivamente teóricos ou avançados, sem uma abordagem prática e acessível. Essa lacuna no ensino pode gerar insegurança, desmotivação e até abandono do aprendizado, já que o aluno não consegue visualizar como aplicar os conceitos na prática. Nesse contexto, existe uma oportunidade clara de oferecer exemplos simples, funcionais e bem estruturados que sirvam como ponto de partida, facilitando a compreensão da lógica básica e incentivando a evolução gradual no desenvolvimento de aplicações.",
+        solution: "A solução proposta consiste no desenvolvimento de uma tela de login simples, funcional e didática, projetada especialmente para auxiliar estudantes iniciantes no aprendizado de desenvolvimento web. A aplicação demonstra de forma clara o funcionamento do processo de autenticação, incluindo entrada de dados, validação de campos e simulação de verificação de credenciais, permitindo que o aluno compreenda cada etapa do fluxo de acesso a um sistema. Com uma estrutura enxuta e organizada, o projeto serve como base prática para estudos, possibilitando que os usuários modifiquem, testem e expandam suas funcionalidades conforme avançam no aprendizado. Ao priorizar clareza e aplicabilidade, a solução contribui para o desenvolvimento da lógica de programação e fortalece a confiança dos iniciantes, facilitando a transição para projetos mais complexos no futuro.",
+        technologies: [
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "Vite", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/vite.svg" },
+            { type: "React", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/react.svg" },
+            { type: "Node.js", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/node.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Tela de Login",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://github.com/LucasfcBastos/Tela-de-Login"
+            }
+        ],
+        versioning: {
+            created_at: "09/03/2026",
+            version: 1,
+            latest_version: "1.0",
+            latest_date: "10/03/2026"
         }
     }
 ];

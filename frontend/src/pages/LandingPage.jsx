@@ -20,7 +20,6 @@ function LandingPage() {
   return (
     <>
       <nav>
-        <h1>Portfolio</h1>
         <Icon className="icon" />
       </nav>
       <div style={{padding: "1em", width: "calc(100% - 2em)", minHeight: "calc(100dvh - (5.25em + 7.5em))", marginTop: "7.5vh" }}>
