@@ -114,6 +114,39 @@ const PersonalProjects = [
             latest_version: "2.0",
             latest_date: "09/01/2026"
         }
+    },
+    {
+        id: 3,
+        nav: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Software%20Balanca/logo.jpg",
+            project_name: "Software Balança",
+            main_tech: "A",
+            sector: "A",
+            sdg: "numb",
+        },
+        project_image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Software%20Balanca/tela.png",
+        opportunity: "A",
+        solution: "A",
+        technologies: [
+            { type: "Figma", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/figma.svg" },
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "Python", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/python.svg" }
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Software_Balanca",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://github.com/LucasfcBastos/Software_Balanca"
+            }
+        ],
+        versioning: {
+            created_at: "19/02/2024",
+            version: 1,
+            latest_version: "1.0",
+            latest_date: "23/02/2026"
+        }
     }
 ];
 
