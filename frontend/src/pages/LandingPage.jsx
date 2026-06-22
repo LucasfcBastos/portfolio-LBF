@@ -1,81 +1,188 @@
-import Icon from '../assets/Icon.svg?react'
-import Vector from '../assets/Vector.svg?react'
+import { useState } from "react";
 
-import ListTech from '../data/TechnologyLists'
-import ListProjects from '../data/PersonalProjects'
-import ListAcademic from '../data/AcademicProjects'
-import SocialMediaLinks from '../data/SocialMediaLinks'
+import Header from "../components/header"
+import FormEmail from "../components/form/formEmail"
+import FormWhats from "../components/form/formWhats"
+import Footer from "../components/footer"
+import CardCertificate from "../components/cards/cards_view_certificate"
+import CardProject from "../components/cards/cards_view_project"
 
-import Hr from '../components/Landing/SectionLines'
-import Stacks from '../components/TechnologyIcons'
-import CardsPersonal from '../components/Landing/CardsPersonal'
-import CardsAcademic from '../components/Landing/CardsAcademic'
-import Forms from '../components/Landing/FormsEmail'
-import Social from '../components/Landing/IconsSocial'
+import img from "../assets/img/file.png";
 
-import '../styles/Nav.css'
-import '../App.css'
+import ProjetosPessoal from '../data/ProjectPessoal'
+import CertificateList from "../data/CertificateList";
+import CategoriasTech from '../data/CategoryTech'
+import OtherProjects from '../data/OtherProjects'
+
+import "../styles/nav.css"
+import "../styles/main.css"
+import "../styles/btn.css"
+
+const menuItems = ["Sobre", "Projeto", "Certificado", "Arte", "Contato"];
 
 function LandingPage() {
-  return (
-    <>
-      <nav>
-        <Icon className="icon" />
-      </nav>
-      <div style={{padding: "1em", width: "calc(100% - 2em)", minHeight: "calc(100dvh - (5.25em + 7.5em))", marginTop: "7.5vh" }}>
-        <div id='main' className='intro'>
-          <div className='img_photo'>
-            <Vector className="vec_photo" />
-          </div>
-          <div className='text_home' style={{textAlign: "center", alignContent: "center"}}>
-            <h1>Olá mundo, eu sou:</h1><br/>
-            <h1 className='textAlter'>LUCAS BASTOS FRANCO</h1><br/>
-            <h1>Eng. de Software</h1>
-          </div>
-        </div>
-        <Hr type="SOBRE MIM" />
-        <div id='stacks'>
-          <p style={{ textAlign: 'center'}}>Engenheiro de Software em início de carreira, apaixonado por tecnologia e inovação. Possuo experiência em projetos acadêmicos atuando em diferentes papéis, como Product Owner, Product Designer, Desenvolvedor Frontend, Desenvolvedor Backend e Quality Assurance, o que me proporcionou uma visão ampla e integrada de todo o ciclo de desenvolvimento de software. Busco oportunidades para adquirir experiência prática, gerar impacto real e crescer junto à empresa.</p><br/>
-          <p style={{ textAlign: 'center'}}>Tenho forte capacidade de comunicação, conseguindo explicar conceitos técnicos de forma clara para públicos não técnicos, além de atuar de forma colaborativa em equipes multidisciplinares. Destaco-me pela organização, priorização de tarefas, documentação objetiva, adaptação a mudanças e aprendizado rápido. Possuo perfil analítico e criativo para resolução de problemas, tomada de decisão e identificação de causas raiz, além de experiência em ambientes que utilizam metodologias ágeis e comunicação assíncrona.</p><br/>
-          <p style={{ textAlign: 'center'}}>Além da área técnica, atuo como organizador e líder de eventos recorrentes, lidando com equipes e ambientes de alta pressão. Essa experiência fortaleceu minhas habilidades de liderança, mediação de conflitos, gestão de tempo e organização de agendas. Tenho vivência na resolução de imprevistos ao vivo, adaptação de conteúdos, gestão de expectativas e manutenção do engajamento do público por longos períodos, sempre mantendo o foco em resultados e colaboração.</p>
-          <div className='camp-stacks'>
-            {ListTech.map((item) => (
-              <Stacks img={item.url} type={item.type} />
-            ))}
-          </div>
-        </div>
-        <Hr type="PROJETOS" />
-        <div id='projects'>
-          <div className='camp-academic'>
-            {ListAcademic.map((item) => (
-              <CardsAcademic key={item.id} img={item.url_img} name={item.name} url={item.redirect_url} />
-            ))}
-          </div>
-          <div className='camp-personal'>
-            {ListProjects.map((item) => (
-              <CardsPersonal key={item.id} img={item.project_image} name={item.nav.project_name} id={item.id} />
-            ))}
-          </div>
-        </div>
-        <Hr type="CONTATO" />
-        <div id='social'>
-          <Forms />
-          <div className='iconsSocial'>
-            {SocialMediaLinks.map((item) => (
-              <Social key={item.id} url={item.redirect_url} img={item.url_img} type={item.type} />
-            ))}
-          </div>
-        </div>
-      </div>
-      <footer>
-        <p>
-          ©2026 - Lucas Bastos<br/>
-          @lucasfcbastos - Todos os direitos reservados<br/>
-          lucas.software.engineering@gmail.com
-        </p>
-      </footer>
-    </>
-  )
+
+    const [selected, setSelected] = useState("Sobre");
+
+    function handleMenuClick(item) {
+        setSelected(item);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    return (
+        <>
+            <Header />
+
+            <nav aria-label="Navegação principal">
+                <div className="user">
+                    <img src={img} alt="Foto de Lucas Bastos Franco" />
+                    <span className="nav-name">Lucas Bastos Franco</span>
+                </div>
+                <div className="options">
+                    <ul role="list">
+                        {menuItems.map((item) => (
+                            <li key={item}>
+                                <button
+                                    className={`nav-btn${selected === item ? " select" : ""}`}
+                                    onClick={() => handleMenuClick(item)}
+                                    aria-current={selected === item ? "page" : undefined}
+                                >
+                                    {item}
+                                </button>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </nav>
+
+            <main>
+                {selected === "Sobre" && (
+                    <div id="sobre">
+                        <div className="card me">
+                            <div style={{ textAlign: "center" }}>
+                                <img src={img} alt="Lucas Bastos Franco" />
+                            </div>
+                            <h1>Lucas Bastos Franco</h1>
+                            <p>Anápolis &mdash; GO</p>
+                            <p>+55 62 99332-8622</p>
+                            <div className="btn curriculo">
+                                <a
+                                    href="https://drive.google.com/drive/folders/1your-curriculo-link"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn-curriculo-link"
+                                    aria-label="Baixar currículo de Lucas Bastos Franco"
+                                >
+                                    Currículo
+                                </a>
+                            </div>
+                        </div>
+                        <div className="card description">
+                            <h2>Resumo profissional</h2>
+                            <p>Estudante de Engenharia de Software (7º período) com experiência prática em desenvolvimento full stack, atuando em projetos acadêmicos e autorais nas áreas de gestão, automação e agronegócio. Possuo experiência com React, Node.js, Python, PostgreSQL e Supabase, participando de etapas como levantamento de requisitos, prototipação, desenvolvimento frontend/backend, testes e documentação. Tenho perfil analítico, aprendizado rápido e facilidade para transformar problemas reais em soluções digitais.</p>
+
+                            <h2>Formação acadêmica</h2>
+                            <CardCertificate
+                                img="https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/unievangelica.svg"
+                                title="Bacharelado em Engenharia de Software — UniEVANGÉLICA"
+                                local="2023 – 2026 (previsão)"
+                            />
+
+                            <h2>Tecnologias</h2>
+                            {CategoriasTech.map((categoria) => (
+                                <div key={categoria.key}>
+                                    <p>{categoria.label}:</p>
+                                    <div className="icons tech">
+                                        {categoria.icons.map((icon) => (
+                                            <img
+                                                key={icon.type}
+                                                className="icons"
+                                                src={icon.url}
+                                                alt={icon.type}
+                                                title={icon.type}
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
+
+                            <h2>Experiência profissional</h2>
+                            <CardCertificate
+                                title="Assistente Operacional — Distribuidora WM"
+                                local="Atuação em rotinas operacionais, controle de estoque e organização de pedidos, além do desenvolvimento de planilhas para apoio ao gerenciamento interno."
+                            />
+                            <CardCertificate
+                                title="Assistente de Automação — Bereshit"
+                                local="Atuação remota no desenvolvimento de planilhas automatizadas para controle de dados veiculares, utilizando lógica de automação e organização de dados operacionais."
+                            />
+                        </div>
+                    </div>
+                )}
+
+                {selected === "Projeto" && (
+                    <div id="projeto">
+                        <h2>Projetos Pessoais</h2>
+                        {ProjetosPessoal.map((projeto) => (
+                            <CardProject
+                                key={projeto.id}
+                                url={`/view/project/${projeto.id}`}
+                                img={projeto.image}
+                                title={projeto.name}
+                                type={projeto.type}
+                            />
+                        ))}
+                    </div>
+                )}
+
+                {selected === "Certificado" && (
+                    <div id="certificado">
+                        {CertificateList.map((cert, i) => (
+                            <CardCertificate
+                                key={`cert-${i}`}
+                                img={cert.url}
+                                title={cert.title}
+                                local={cert.local}
+                            />
+                        ))}
+                    </div>
+                )}
+
+                {selected === "Arte" && (
+                    <div id="arte">
+                        {OtherProjects.map((item) => {
+                            const url =
+                                item.type === "Poema"
+                                    ? `/view/poem/${item.id}`
+                                    : item.type === "Jogo"
+                                    ? `/view/game/${item.id}`
+                                    : `/view/project/${item.id}`;
+                            return (
+                                <CardProject
+                                    key={item.id}
+                                    url={url}
+                                    img={item.description.image}
+                                    title={item.name}
+                                    type={item.type}
+                                />
+                            );
+                        })}
+                    </div>
+                )}
+
+                {selected === "Contato" && (
+                    <div id="contato">
+                        <h2>Contato por E-mail</h2>
+                        <FormEmail />
+                        <hr />
+                        <h2>Contato por WhatsApp</h2>
+                        <FormWhats />
+                    </div>
+                )}
+            </main>
+
+            <Footer />
+        </>
+    );
 }
 
-export default LandingPage
+export default LandingPage;

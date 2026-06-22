@@ -1,0 +1,208 @@
+.card {
+    background-color: var(--color-surface, #ffffff);
+    border-radius: var(--radius-sm, 6px);
+    overflow: hidden;
+    border: 1px solid var(--color-border, rgb(200, 203, 210));
+    box-shadow: var(--shadow-card, 0 2px 8px rgba(0, 0, 0, 0.08));
+}
+
+/* --- Card clicável (projetos) --- */
+
+.card.redi {
+    width: 100%;
+    max-width: 500px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card.redi:hover {
+    box-shadow: var(--shadow-card-hover, 0 8px 24px rgba(0, 0, 0, 0.15));
+    transform: translateY(-2px);
+}
+
+.card.redi:focus-visible {
+    outline: 2px solid var(--color-accent, #2563eb);
+    outline-offset: 2px;
+}
+
+.card.redi .img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.card.redi .text {
+    padding: 1em;
+    display: grid;
+    gap: 0.625em;
+}
+
+.card.redi .text .user {
+    display: flex;
+    align-items: center;
+    gap: 0.375em;
+}
+
+.card.redi .text img {
+    width: 1.75em;
+    height: 1.75em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card.redi .text .type {
+    background-color: var(--color-badge-bg, #dbeafe);
+    color: var(--color-badge-text, #1d4ed8);
+    width: fit-content;
+    padding: 0.3em 0.875em;
+    border-radius: var(--radius-full, 9999px);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+/* --- Card de perfil (sticky) --- */
+
+.card.me {
+    position: sticky;
+    top: 15%;
+    padding: 1.25em;
+    cursor: default;
+    width: 100%;
+    max-width: 400px;
+    display: grid;
+    gap: 0.5em;
+    text-align: center;
+    align-self: start;
+}
+
+.card.me img {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* --- Card de descrição (bio) --- */
+
+.card.description {
+    padding: 1.25em;
+    cursor: default;
+    display: grid;
+    gap: 0.875em;
+}
+
+.card.description .icons.tech {
+    display: flex;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    padding: 0.5em 0;
+}
+
+.card.description .icons.tech img {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+}
+
+/* --- Card de certificado --- */
+
+.card.certif {
+    display: flex;
+    width: 100%;
+    max-width: 550px;
+    cursor: default;
+}
+
+.card.certif .img {
+    width: 7em;
+    height: 7em;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+    padding: 0.75em;
+}
+
+.card.certif .text {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.375em;
+}
+
+/* --- Card "saiba mais" --- */
+
+.card.saiba {
+    width: 100%;
+    max-width: 500px;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    cursor: default;
+}
+
+.card.saiba .img {
+    width: 3em;
+    height: 3em;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.card.saiba .text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375em;
+}
+
+.card.saiba .text a {
+    color: var(--color-accent, #2563eb);
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.card.saiba .text a:hover {
+    text-decoration: underline;
+}
+
+/* --- Grid de tecnologias (ViewProject) --- */
+
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 0.5em 0;
+}
+
+.tech-grid img {
+    width: 3.5em;
+    height: 3.5em;
+    object-fit: contain;
+}
+
+/* --- Responsivo --- */
+
+@media (max-width: 910px) {
+    .card.me {
+        position: relative;
+        width: 100%;
+        max-width: none;
+        z-index: 0;
+    }
+
+    .card.description .icons.tech img {
+        width: 2.75em;
+        height: 2.75em;
+    }
+
+    .card.certif .img {
+        width: 5.5em;
+        height: 5.5em;
+    }
+}

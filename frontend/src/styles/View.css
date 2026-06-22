@@ -1,0 +1,53 @@
+.info-project {
+    padding: 1em 5em;
+    display: flex;
+    gap: 2em;
+}
+
+.info-project img#tela,
+.info-project .card.description {
+    width: 50%;
+    height: auto;
+    border-radius: 12px;
+    color: black;
+}
+
+.info-project .card.description {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+}
+
+.info-project .card.description h2,
+.info-project .card.description p {
+    margin: 0;
+    padding: 0;
+}
+
+.info-project .card.description img {
+    width: 5em;
+    height: auto;
+}
+
+p.poem-text {
+    white-space: pre-line;
+}
+
+@media (max-width: 768px) {
+    .info-project {
+        flex-direction: column;
+        padding: 0em;
+        width: 85%;
+    }
+
+    .info-project .card.description {
+        width: 90.5%;
+        height: auto;
+    }
+
+    .info-project img#tela {
+        min-width: 100%;
+        height: auto;
+        border-radius: 0px;
+    }
+}

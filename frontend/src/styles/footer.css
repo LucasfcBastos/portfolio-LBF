@@ -1,0 +1,126 @@
+footer {
+    padding: 2.5em 5em;
+    background-color: var(--color-footer-bg, #1e2330);
+    color: #e2e8f0;
+}
+
+footer .categorias {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.categorias .camps {
+    display: flex;
+    flex-direction: column;
+    gap: 0.875em;
+    min-width: 180px;
+}
+
+.camps h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #94a3b8;
+    margin-bottom: 0.25em;
+}
+
+.camps .itens-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375em;
+}
+
+.itens-footer .itens {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.375em 0.625em;
+    border-radius: var(--radius-sm, 6px);
+    transition: background-color 0.15s ease;
+    min-width: 0;
+}
+
+.itens-footer .itens:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+.itens img {
+    width: 1.5em;
+    height: 1.5em;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.itens a {
+    font-size: 0.825rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: color 0.15s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.itens a:hover {
+    color: #e2e8f0;
+}
+
+.itens a:focus-visible {
+    outline: 2px solid var(--color-accent, #2563eb);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+footer hr {
+    margin: 2em 0 1.25em;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer .label {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375em;
+}
+
+.footer-brand {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #e2e8f0;
+    letter-spacing: 0.02em;
+}
+
+footer .label p {
+    font-size: 0.775rem;
+    color: #64748b;
+}
+
+footer .label a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.15s ease;
+}
+
+footer .label a:hover {
+    color: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 2em 1.5em;
+    }
+
+    footer .categorias {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .camps {
+        width: 100%;
+    }
+}

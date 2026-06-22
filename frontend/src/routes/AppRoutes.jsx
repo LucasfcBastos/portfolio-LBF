@@ -1,17 +1,21 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import ScrollToTop from "./ScrollToTop";
 import LandingPage from "../pages/LandingPage";
-import AboutProject from "../pages/AboutProject";
-import NotFound from "../pages/NotFound";
+import ViewProject from "../pages/ViewProject";
+import ViewPoem from "../pages/ViewPoem";
+import ViewGame from "../pages/ViewGame";
 
 export function AppRoutes() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/project/:id" element={<AboutProject />} />
-        <Route path="/error" element={<NotFound />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <ScrollToTop />
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/view/project/:id" element={<ViewProject />} />
+                <Route path="/view/poem/:id" element={<ViewPoem />} />
+                <Route path="/view/game/:id" element={<ViewGame />} />
+            </Routes>
+        </BrowserRouter>
+    );
 }
