@@ -67,9 +67,8 @@ function LandingPage() {
                             <p>+55 62 99332-8622</p>
                             <div className="btn curriculo">
                                 <a
-                                    href="https://drive.google.com/drive/folders/1your-curriculo-link"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="/curriculo.pdf"
+                                    download="Lucas_Bastos_Franco_Curriculo.pdf"
                                     className="btn-curriculo-link"
                                     aria-label="Baixar currículo de Lucas Bastos Franco"
                                 >
