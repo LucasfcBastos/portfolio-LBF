@@ -1,3 +1,5 @@
+import rodaNaEstradaVideo from "../assets/video/Roda_na_Estrada.mp4";
+
 const OtherProjects = [
     {
         id: "82be3163-f09c-4993-85f0-6c9f6d70df8d",
@@ -5,7 +7,7 @@ const OtherProjects = [
         name: "Roda na Estrada",
         description: {    
             image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Outher/MV.png",
-            video: "",
+            video: rodaNaEstradaVideo,
             poema: [
                 {
                     id: 1,

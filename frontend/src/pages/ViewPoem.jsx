@@ -49,6 +49,12 @@ function ViewPoem() {
                         Lucas Bastos Franco
                     </button>
                 </div>
+                <div className="info-project" style={{ justifyContent: "center" }}>
+                    <video id="tela" controls autoPlay loop >
+                        <source src={poem.description.video} type="video/mp4" />
+                        Seu navegador não suporta vídeo.
+                    </video>
+                </div>
             </div>
 
             <nav className="nav-options" aria-label="Poemas">

@@ -12,6 +12,22 @@
     color: black;
 }
 
+
+.info-project video#tela {
+    width: 65%;
+    height: auto;
+    border-radius: 12px;
+}
+
+source {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
 .info-project .card.description {
     display: grid;
     gap: 1em;
