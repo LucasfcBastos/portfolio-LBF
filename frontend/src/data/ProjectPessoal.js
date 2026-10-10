@@ -154,6 +154,67 @@ const PersonalProjects = [
             }
         ]
     },
+    {
+        id: "fc9cca3e-8f7e-4bcd-82f8-0b0927f21b19",
+        type: "Aplicação Web",
+        name: "C.R.I.S 2",
+        info: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/CRIS/logo.png",
+            main_tech: "Desenvolvimento Web",
+            sector: "Entretenimento e RPG de Mesa",
+            sdg: "9",
+        },
+        image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/CRIS/tela.png",
+        opportunity: "O C.R.I.S consolidou-se como uma ferramenta de apoio para mestres e jogadores do RPG Ordem Paranormal, centralizando a criação e o gerenciamento de fichas de personagem. Entretanto, com o anúncio de *Ordem Paranormal 2*, surgiu a necessidade de adaptar a ferramenta às mudanças previstas para a nova edição. Até o momento, foi disponibilizado um material de playtest que apresenta as regras e o funcionamento do jogo por meio de fichas de personagens previamente construídas, sem oferecer orientações completas para a criação de personagens próprios. Essa limitação dificulta que os jogadores experimentem livremente as novas mecânicas, desenvolvam conceitos originais e adaptem seus personagens de *Ordem Paranormal 1* para a nova edição enquanto o livro oficial não é publicado. Diante desse cenário, os jogadores que desejam explorar as possibilidades do novo sistema precisam interpretar as informações disponíveis e realizar adaptações manualmente, o que pode gerar dúvidas, inconsistências e dificuldades na aplicação das regras. Assim, evidencia-se a necessidade de uma solução que facilite a criação, gerenciamento de fichas e rolagem de dados sem ser físico com base nas informações disponíveis no playtest, permitindo que os jogadores experimentem o novo sistema, adaptem personagens existentes e se preparem para a transição entre as edições enquanto aguardam a publicação do livro oficial.",
+        solution: "O C.R.I.S 2 foi desenvolvido como a evolução da plataforma original, reconstruída com base nas regras de playtest de Ordem Paranormal 2. A aplicação permite que os jogadores criem e gerenciem seus agentes diretamente no navegador, preenchendo dados pessoais, atributos, perícias, pontos de status, habilidades e ataques em uma ficha digital fiel ao modelo original. A seção de combate permite cadastrar novos tipos de ataque e realizar os testes de dano dentro da própria plataforma, agilizando o andamento das sessões. As fichas podem ser salvas e importadas em arquivos JSON, garantindo portabilidade e facilitando o compartilhamento entre jogadores e mestres. Como complemento, o projeto disponibiliza um guia não oficial que ensina passo a passo a criação de personagens no novo sistema. Com interface responsiva para desktop e dispositivos móveis, a solução reduz a curva de aprendizado da nova edição e fortalece o engajamento da comunidade durante a fase de playtest.",
+        technologies: [
+            { type: "Google Documentos", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/google-documentos.svg" },
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "HTML5", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/html.svg" },
+            { type: "CSS3", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/css.svg" },
+            { type: "JavaScript", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/javascript.svg" },
+            { type: "React", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/react.svg" },
+            { type: "Vite", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/vite.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Url do Projeto",
+                redirect_text: "Ver Projeto",
+                redirect_url: "https://crisordemparanormal2.netlify.app/"
+            }
+        ]
+    },
+    {
+        id: "fe2b27b4-03f1-4e07-9a35-78d6a6a66bbc",
+        type: "Sistema Desktop",
+        name: "Field X AX - Visão Computacional",
+        info: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Visão%20FieldX/logo.png",
+            main_tech: "Visão Computacional",
+            sector: "Agronegócio",
+            sdg: "2",
+        },
+        image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Visão%20FieldX/tela.png",
+        opportunity: "A Field X, startup sediada em Rio Verde, desenvolveu o AX, uma tecnologia de pulverização seletiva que utiliza inteligência artificial e visão computacional para detectar plantas daninhas em tempo real e acionar os bicos de pulverização apenas onde há real necessidade. Porém, durante apresentações em bancas de exposição, como o Bistro e demonstrações em bancada, o projeto costumava ser apresentado apenas por slides ou vídeos ilustrativos. Esses formatos pouco interativos dificultam prender a atenção do público e, sobretudo, transmitir de forma clara para pessoas que não são da área de tecnologia como uma câmera consegue enxergar, identificar e decidir onde aplicar o defensivo. Sem uma demonstração prática, conceitos como detecção em tempo real, processamento embarcado e pulverização seletiva permanecem abstratos, reduzindo o impacto da apresentação e a compreensão do valor da solução, que promete reduzir em até 70% o desperdício de insumos nas lavouras de soja e milho.",
+        solution: "A solução consiste em um sistema de demonstração em visão computacional que reproduz, ao vivo, a perspectiva da câmera do AX. Utilizando uma webcam, a aplicação captura imagens em tempo real, processa cada quadro e destaca os objetos detectados diretamente sobre o vídeo, com caixas de marcação, etiquetas e informações exibidas em uma interface gráfica. Durante a apresentação, o público vê na prática o mesmo raciocínio que o equipamento executa no campo: enxergar, identificar o alvo e sinalizar onde a pulverização deveria ser acionada. Dessa forma, a demonstração substitui slides estáticos por uma experiência interativa e envolvente, chama a atenção dos visitantes da bancada e torna intuitivo, mesmo para quem não é da área de TI, o funcionamento da detecção de plantas daninhas e o conceito da pulverização seletiva, offline e por retrofit proposto pela Field X.",
+        technologies: [
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "Python", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/python.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Repositorio",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://github.com/LucasfcBastos/Visao-Computacional-FieldX"
+            }
+        ]
+    },
 ];
 
 export default PersonalProjects;

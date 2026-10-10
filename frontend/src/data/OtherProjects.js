@@ -246,7 +246,7 @@ const OtherProjects = [
         type: "Jogo",
         name: "RAS - GAME",
         description: {
-            image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Outher/Ras-Farm.jpeg",
+            image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Outher/Ras-Farm.png",
             video: "",
             info: [
                 {
