@@ -215,6 +215,77 @@ const PersonalProjects = [
             }
         ]
     },
+    {
+        id: "d1a4037d-a25f-41b8-8e5e-fa4eb0974f30",
+        type: "E-commerce",
+        name: "FERREIRO",
+        info: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Ferreiro/logo.png",
+            main_tech: "Desenvolvimento Web",
+            sector: "Moda e Vestuário",
+            sdg: "9",
+        },
+        image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Ferreiro/tela.png",
+        opportunity: "O mercado de moda e vestuário tem passado por uma crescente digitalização, tornando a presença online um fator importante para a divulgação e comercialização de produtos. Entretanto, pequenos empreendedores e marcas independentes nem sempre possuem uma plataforma própria para apresentar seus produtos e realizar suas vendas, ficando dependentes de redes sociais e marketplaces de terceiros. Nesse contexto, a ausência de um ambiente digital personalizado limita o controle sobre a identidade visual da marca, a organização dos produtos e a experiência oferecida aos consumidores. Diante dessa necessidade, surgiu a oportunidade de desenvolver uma solução de comércio eletrônico que permitisse à marca FERREIRO estabelecer sua própria presença digital, centralizando a exposição e a comercialização de suas peças em uma plataforma independente.",
+        solution: "O FERREIRO foi desenvolvido como uma plataforma de comércio eletrônico voltada à comercialização de roupas e acessórios de uma marca independente. A aplicação oferece um ambiente digital próprio para apresentação dos produtos, estruturado de acordo com a identidade visual da marca e com foco na experiência de navegação dos consumidores. O projeto utiliza React e Vite no frontend, integrado a um backend desenvolvido em Node.js e TypeScript, responsável pela comunicação com os serviços de autenticação e armazenamento de dados do Firebase. A plataforma também contempla funcionalidades de cadastro, autenticação e gerenciamento de perfil dos usuários, permitindo a identificação dos clientes dentro do ambiente da loja. Com uma arquitetura separada entre frontend e backend, hospedados na Vercel, e integração com Firebase Authentication e Cloud Firestore, o projeto estabelece uma estrutura para a operação digital da marca, proporcionando maior autonomia na apresentação e comercialização de seus produtos.",
+        technologies: [
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "HTML5", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/html.svg" },
+            { type: "CSS3", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/css.svg" },
+            { type: "JavaScript", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/javascript.svg" },
+            { type: "React", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/react.svg" },
+            { type: "Vite", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/vite.svg" },
+            { type: "Node.js", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/node.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+            { type: "Firebase", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/firebase.svg" },
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/vercel.svg",
+                display_text: "Url do Projeto",
+                redirect_text: "Ver Projeto",
+                redirect_url: "https://ferreiro.vercel.app/"
+            }
+        ]
+    },
+    {
+        id: "4ec348f5-9cfb-4ff5-bda8-1cf268d17355",
+        type: "Aplicativo Mobile",
+        name: "Anjo da Guarda",
+        info: {
+            logo_url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Anjo%20da%20Guarda/logo.png",
+            main_tech: "Internet das Coisas (IoT)",
+            sector: "Saúde e Assistência ao Idoso",
+            sdg: "3",
+        },
+        image: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/Portfolio/Anjo%20da%20Guarda/tela.png",
+        opportunity: "O envelhecimento da população amplia a necessidade de soluções tecnológicas que contribuam para a segurança, o acompanhamento e a qualidade de vida das pessoas idosas. Situações como quedas, dificuldades de locomoção e esquecimento dos horários de medicação podem representar riscos à saúde, especialmente quando o idoso permanece sozinho ou distante de seus familiares. Entretanto, o acompanhamento contínuo nem sempre é possível, e a demora na identificação de uma emergência pode dificultar a prestação de auxílio. Esse cenário evidencia a necessidade de uma solução acessível que utilize os recursos disponíveis nos smartphones para identificar possíveis situações de risco, facilitar a comunicação com familiares e cuidadores e auxiliar na organização dos cuidados cotidianos.",
+        solution: "O Anjo da Guarda foi desenvolvido como um aplicativo mobile de assistência e monitoramento para idosos, utilizando recursos nativos dos smartphones para oferecer maior segurança e facilitar o acompanhamento por familiares e cuidadores. Por meio do acelerômetro, o aplicativo identifica padrões de movimento associados a possíveis quedas e, quando uma ocorrência é confirmada, apresenta a pergunta (Você está bem?), iniciando uma contagem de 30 segundos. Caso não haja resposta, o sistema gera um alerta de emergência acompanhado da localização GPS do usuário. A aplicação também permite fotografar embalagens de medicamentos, registrar os respectivos nomes e horários e programar lembretes com notificações locais que podem incluir a imagem do medicamento. Como complemento, o projeto integra um sistema de contas para idosos e cuidadores, com vinculação autorizada entre os usuários por meio de códigos de acesso. Essa integração permite que os cuidadores acompanhem a localização, o status e os alertas dos idosos em tempo real, consultem o histórico de ocorrências e visualizem sua posição em um mapa. Desenvolvido com Flutter e Dart, utilizando Firebase para autenticação e sincronização de dados, o aplicativo reúne recursos de sensores, geolocalização, câmera e notificações em uma solução integrada, contribuindo para a autonomia dos idosos e proporcionando maior tranquilidade aos seus familiares.",
+        technologies: [
+            { type: "GitHub", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg" },
+            { type: "Visual Studio Code", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/visual-studio-code.svg" },
+            { type: "HTML5", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/html.svg" },
+            { type: "CSS3", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/css.svg" },
+            { type: "Git", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/git.svg" },
+            { type: "Firebase", url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/Firebase.svg" },
+        ],
+        learn_more: [
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/github.svg",
+                display_text: "Repositorio",
+                redirect_text: "Acessar URL",
+                redirect_url: "https://github.com/LucasfcBastos/Anjo-da-Guarda"
+            },
+
+            {
+                url: "https://raw.githubusercontent.com/LucasfcBastos/custom_icons/main/version01/Firebase.svg",
+                display_text: "Url do Projeto",
+                redirect_text: "Ver Projeto",
+                redirect_url: "https://guardianangel-98efb.web.app/"
+            }
+        ]
+    },
 ];
 
 export default PersonalProjects;
